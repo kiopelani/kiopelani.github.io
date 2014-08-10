@@ -7,7 +7,7 @@ body {
   margin-right: 10%;
   margin-top: 0;
   max-height: 100%;
-  background-color: black;
+  background-color: white;
 }
 
 a:link {
@@ -18,10 +18,9 @@ a:hover {
   color: LightBlue;
 }
 
+
 #left {
   width: 5%;
-  height: 1000px;
-  background-color: white;
   float:left;
 }
 
@@ -29,17 +28,14 @@ a:hover {
   width: 70%;
   background-color: black;
   float: left;
-  height: 1000px;
+  height: 99%px;
   margin: 0 auto;
   text-align: center;
 }
 
 #right {
   width: 5%;
-  height: 1000px;
-  background-color: white;
   float: left;
-  margin: 0;
 }
 
 #header {
