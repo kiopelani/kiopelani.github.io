@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "century gothic", arial;
-  background-color: black;
+  background-color: SkyBlue;
     }
 
 #header {
@@ -18,7 +18,7 @@ body {
 
 
 #profile-pic img {
-    float: left;
+    float: right;
     margin: 7px 40px 5px 20px;
     border-radius: 100%;
     width: 60px;
@@ -30,9 +30,8 @@ body {
   margin-top: 25px;
   margin-left: 2px;
   font-size: 20px;
-  color: #738DAC;
+  color: SkyBlue;
 }
-
 
 #navigation {
   clear: both;
@@ -43,42 +42,60 @@ body {
   width: 100%;
 }
 
-
-#navigation td a:link {
-  font-size: 35px;
-  color: #FEF9ED;
-  margin-left: 55px;
+#navigation ul {
+  list-style: none;
+  text-align: center;
 }
 
-#navigation td a:hover {
-  color: #89C8FF;
+#navigation li {
+  display: inline;
+  margin: 25px;
+}
+
+#navigation ul a:link {
+  font-size: 35px;
+  color: #FEF9ED;
+  text-align: center;
+}
+
+#navigation ul a:hover {
+  color: black;
 }
 
 #center {
-  margin: 50px;
+  margin: 10% 30% 10% 30%;
   background-color: white;
   color: #222D3C;
-  height: 55%;
+  height: 40%;
+  width: 40%;
+}
+
+#center ul {
+  padding-left: 25px;
+  padding-right: 10px;
+  margin-left: 0;
+}
+
+#center a:link {
+  color: SkyBlue;
+}
+
+#center a:hover {
+  color: MediumTurquoise;
 }
 
 #title {
-  border-bottom: 2px solid #738DAC;
-  color: black;
-  text-align: left;
-  font-size: 40px;
-  padding: 10px;
-  margin: 10px;
+  border-bottom: 2px solid MediumTurquoise;
+  background-color: MediumTurquoise;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 10px 10px 10px;
 }
 
-#date {
-  font-size: 15px;
-  padding: 0 0 0 12px;
-  margin: 0 0 0 10px;
-}
 
 #blog-body{
-  padding: 5px;
-  margin: 5px 10px 10px 10px;
+ margin: 5px;
 }
 
 #blog-body img {

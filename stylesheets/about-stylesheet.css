@@ -1,0 +1,123 @@
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "century gothic", arial;
+  background-color: SkyBlue;
+    }
+
+#header {
+  background-color: white;
+  color: white;
+  margin: 0;
+  padding: 10px 10px 25px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+
+#profile-pic img {
+    float: right;
+    margin: 7px 40px 5px 20px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+#site-title {
+  float: left;
+  margin-top: 25px;
+  margin-left: 2px;
+  font-size: 20px;
+  color: SkyBlue;
+}
+
+#navigation {
+  clear: both;
+  background-color: MediumTurquoise;
+  padding-bottom: 5px;
+  border-top: white 5px solid;
+  border-bottom: white 5px solid;
+  width: 100%;
+}
+
+#navigation ul {
+  list-style: none;
+  text-align: center;
+}
+
+#navigation li {
+  display: inline;
+  margin: 25px;
+}
+
+#navigation ul a:link {
+  font-size: 35px;
+  color: #FEF9ED;
+  text-align: center;
+}
+
+#navigation ul a:hover {
+  color: black;
+}
+
+#center {
+  margin: 10% 30% 10% 30%;
+  background-color: white;
+  color: #222D3C;
+  height: 40%;
+  width: 40%;
+}
+
+
+#center a:link {
+  color: MediumTurquoise;
+}
+
+#center a:hover {
+  color: SkyBlue;
+}
+
+#title {
+  border-bottom: 2px solid MediumTurquoise;
+  background-color: MediumTurquoise;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+#blog-body{
+ margin: 15px;
+}
+
+#blog-body img {
+    margin: 2px 15px 3px 5px;
+    width: 200px;
+    float: left;
+
+}
+
+#footer {
+  clear: both;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  background-color: MediumTurquoise;
+  text-align: center;
+  color:white;
+  padding-top: 20px;
+  font-size: 15px;
+  height: 40px;
+  width: 100%;
+}
+
+#footer a:link {
+  color: white;
+}
+
+
+#footer a:hover {
+  color: #89C8FF;
+}
