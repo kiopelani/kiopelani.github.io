@@ -26,33 +26,28 @@
         </ul>
     </div>
 
-
     <div id="content">
       <div class="text-box" id="blog-box">
         <div id="text-box-heading">
-           Cultural Blog #1
+           CSS: Classes vs IDs
         </div>
 
         <div id="date">
-            August 10, 2014
+            August 17, 2014
         </div>
-         <img src="images/firepit.jpg" alt="fire">
-        <p>
-          Well, watching Shreef&rsquo;s fireside chat simultaneously managed to terrify me and reassure me that everything is going to be great.  Terrified, because it confirmed my expectation that at DBC, I will probably be working harder than I have ever worked before (and I used to work an 8-11pm job!), but reassured because Shreef constantly reminded us that this is a group experience and we&rsquo;re all in this together.
-
-          <p><em>&quot;This is a team sport&quot;</em><br>
-              This was probably the most important take away for me from the entire video. Learning how to work socially and learn from others is one of the most important factors and succeeding at DBC.  I hadn&rsquo;t really thought about that before, but I&rsquo;m excited and can&rsquo;t wait to be inspired by my fellow cohort mates.
-
-
-          <p><em>&quot;Being a developer involves reading code more than writing code.&quot;</em><br>
-              This was completely eye opening for me, but once Shreef said it, it made so much sense.  I&rsquo;ve already learned a tremendous amount just from looking at other people&rsquo;s solutions to the challenges, and will keep up the habit!
-
+        <p> One of the most confusing aspects of learning CSS has been when to use classes and when to use ids.  The general rule of thumb seems to be that ids are for elements that will only appear on a page once, while classes are for elements that will occur multiple times. But the difference between the two, and when to use them, is a bit more complex than that.
           <p>
-              Overall, I&rsquo;m still a little nervous about DBC, but I&rsquo;m so excited to learn from our instructors and (perhaps more importantly) from each other.
+          First of all, it is possible for a single element to have both a class and an id at the same time.  In fact, an element can have as many classes as you want, but it can only have one unique id.  For example, let's say we wanted to represent my vegetable garden in html.  It might look a little something like this:
+          <img src="images/garden.png" alt="garden-code">
+          <p>
+          In this, my divs "starsky" and "hutch" both have all the properties of the tomato class and the vegetable class, but they also have unique properties associated only with their ids.
+          <p>
+          Another important difference beween ids and classes is that a browser can automatically scroll to an id element, while it cannot do the same with a class. For example, clicking on a link to #starsky would take you directly to my starsky div on the page.  If you tried to link to .vegetable, however, the browser wouldn't know which instance of the class vegetable to go to.  So, if you want to create a link directly to an element on the page, that element should have an id.
           </p>
-              <div id="previous-next">
-                <a href="t1-compare-websites.html">Previous</a>
-                <a href="week2_technical.html">Next</a>
+         <div id="previous-next">
+                <a href="c1-chefs-kitchen.html">Previous</a>
+                &emsp;
+                <a href="#">Next</a>
               </div>
       </div>
     </div>
@@ -80,7 +75,3 @@
   </body>
 
 </html>
-
-
-
-
