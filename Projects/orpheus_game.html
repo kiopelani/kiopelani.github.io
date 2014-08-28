@@ -101,30 +101,39 @@ captured by Hades, king of the underworld, and is being held prisoner there. In 
 
       function move(e) {
         if(e.keyCode === 39 && orpheus.health > 0){
+          console.log("initial:" + positionLeft + "and " + positionTop);
           if(positionLeft < 300){
             positionLeft += 100;
             orpheusIcon.style.left = positionLeft + "px";
           }
+          console.log("final:" + positionLeft + "and " + positionTop);
         }
         if((e.keyCode === 37) && (orpheus.health > 0)){
+            console.log("initial:" + positionLeft + "and " + positionTop);
             positionLeft -= 100;
-            orpheusIcon.style.left = positionLeft + "px";
-            if(positionLeft <= 0){
+            if(positionLeft < 0){
               positionLeft += 100;
             }
+            orpheusIcon.style.left = positionLeft + "px";
+            console.log("final:" + positionLeft + "and " + positionTop);
         }
         if((e.keyCode === 38) && (orpheus.health > 0)){
+          console.log("initial:" + positionLeft + "and " + positionTop);
             positionTop -= 100;
-            orpheusIcon.style.top = positionTop + "px";
-            if(positionTop <= 0){
+            if(positionTop < 0){
               positionTop += 100;
             }
+            orpheusIcon.style.top = positionTop + "px";
+
+            console.log("final:" + positionLeft + "and " + positionTop);
         }
-      if((e.keyCode == 40) && (orpheus.health > 0)){
+      if((e.keyCode === 40) && (orpheus.health > 0)){
+          console.log("initial:" + positionLeft + "and " + positionTop);
           if(positionTop < 300){
             positionTop += 100;
             orpheusIcon.style.top = positionTop + "px";
             }
+            console.log("final:" + positionLeft + "and " + positionTop);
         }
         isOrpheusAtCerberus();
         isOrpheusAtLyre();
@@ -177,3 +186,5 @@ captured by Hades, king of the underworld, and is being held prisoner there. In 
       </script>
     </body>
 </html>
+
+<!-- something about the original position of the orpheus icon, and the way the up and left arrows interact with it is wrong -->
