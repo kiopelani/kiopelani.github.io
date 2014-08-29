@@ -46,17 +46,17 @@ body {
 
     #navigation ul a:link {
       font-size: 35px;
-      color: white;
+      color: skyBlue;
       text-align: center;
       text-decoration: none;
     }
 
     #navigation ul a:hover {
-      color: skyBlue;
+      color: white;
     }
 
     #navigation ul a:visited {
-      color: skyBlue;
+      color: white;
     }
 
 #content {
