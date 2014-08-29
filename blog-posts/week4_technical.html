@@ -38,16 +38,16 @@
           Ruby is filled with all kinds of fun methods that I barely know anything about, so this week, I decided to learn more about the <strong>group_by enumerable method</strong>.
           <p>
           First of all, the basic syntax for the method looks like this:
-           <img src="images/basic_group_by.tiff" style="width: 95%" alt="syntax">
+           <img src="images/basic_group_by.png" style="width: 95%" alt="syntax">
            <br>
           The output for both of these is a hash. For an array, the group_by method runs each array item through the given block of code, and the result of that will become a key in the output hash. The value associated with that key will be any array item that produces that key value when passed through the block.
           <p>
           Let's say I have the following array, which is a list of Lord of the Rings characters:
-          <img src="images/lotr_array.tiff" style="width: 95%" alt="lotr-array">
+          <img src="images/lotr_array.png" style="width: 95%" alt="lotr-array">
           <p>
           I can use the group_by method to group the characters by their type, by doing the following:
-          <img src="images/middle_earth_group_by.tiff" style="width: 95%" alt="lotr-group-by">
-          <img src="images/group_by_array_result.tiff" style="width: 95%" alt="array result">
+          <img src="images/middle_earth_group_by.png" style="width: 95%" alt="lotr-group-by">
+          <img src="images/group_by_array_result.png" style="width: 95%" alt="array result">
           <br>
           The resulting hash(above) has keys that correspond with the strings I created in the switch statement, and each hash value is an array that contain any items that matched the key(via regular expression).
           <p>
@@ -55,10 +55,10 @@
           <p>
           Using the group_by method on a hash uses the result of the given block as the new hash key, and returns an array for the new value, where the original hash key is the first item in the new array value and the original hash value is the second. This is pretty confusing, so let's look at an example.
           <p>I have the following hash, which contains Harry Potter characters and their corresponding houses:
-          <img src="images/hogwarts_hash.tiff" style="width: 95%" alt="hogwarts-hash">
+          <img src="images/hogwarts_hash.png" style="width: 95%" alt="hogwarts-hash">
           <p>
           Let's say I wanted to create a new hash that organized these characters by their houses. I could do that using the group_by method like so:
-          <img src="images/hogwarts_hash_results.tiff" style="width: 95%" alt="hogwarts-group-by">
+          <img src="images/hogwarts_hash_results.png" style="width: 95%" alt="hogwarts-group-by">
           <p>
           Note that in the example above, <strong> student</strong> refers to the original hash key, and <strong>house</strong> refers to the value. The new hash generated here now has each house for the key, and each value is an array made up of subarrays that contain the character and their house name. Pretty niffty!
           <p>
