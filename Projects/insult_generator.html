@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Shakespearean Insult Generator
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Cinzel|Griffy|UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+    <style>
+            body {
+              margin: 5%;
+              padding: 0;
+              font-family: "IM Fell DW Pica SC", serif;
+              background-color: skyBlue;
+            }
+
+            h3 {
+              color: black;
+              text-align: center;
+            }
+
+            h5 {
+              text-align: center;
+            }
+
+            h5 a:link {
+              color: white;
+            }
+
+            h5 a:visited {
+              color:white;
+            }
+            #insult_box {
+              background-color: white;
+              color: black;
+              font-size: 45px;
+              margin-left: 5%;
+              padding: 10px;
+            }
+
+            img {
+              width: 40%;
+              margin-left: 30%;
+              margin-bottom: 5%;
+            }
+            </style>
+
+
+  </head>
+
+    <body>
+      <h3>Press Enter on Your KeyBoard to Get Your Insult.</h3>
+      <img src="http://cdn.someecards.com/someecards/usercards/MjAxMi0xMDM0ZWYxZDgwNzA4MmY3.png">
+      <div id="insult_box">
+        Are you ready?
+      </div>
+      <h5>Many thanks be given to <a href="http://www.pangloss.com/seidel/shake_rule.html">http://www.pangloss.com/seidel/shake_rule.html</a> for providing the words.</h5>
+      <script>
+      var insult_output = document.getElementById("insult_box");
+      var insult_generator = function() {
+
+          var adjective_1 = ["artless", "bawdy", "beslubbering", "bootless", "churlish", "cockered", "clouted", "craven", "currish", "dankish", "dissembling", "droning", "errant", "fawning", "fobbing", "froward", "frothy", "gleeking", "goatish", "gorbellied", "impertinent", "infectious", "jarring", "loggerheaded", "lumpish", "mammering", "mangled", "mewling", "paunchy", "pribbling", "punking", "puny", "qualling", "rank", "reeky", "roguish", "ruttish", "saucy", "spleeny", "spongy", "surly", "tottering", "unmuzzled", "vain", "venomed", "villainous", "warped", "wayward", "weedy", "yeasty"];
+
+          var adjective_2 = ["base-court", "bat-fowling", "beef-witted", "beetle-headed", "boil-brained", "clapper-clawed", "clay-brained", "common-kissing", "crook-pated", "dismal-dreaming", "dizzy-eyed", "doghearted", "dread-bolted", "earth-vexing", "elf-skinned", "fat-kidneyed", "fen-sucked", "flap-mouthed", "fly-bitten", "folly-fallen", "fool-born", "full-gorged", "guts-griping", "half-faced", "hasty-witted", "hedge-born", "hell-hated", "idle-headed", "ill-breeding", "ill-nurtured", "knotty-pated", "milk-livered", "motley-minded", "onion-eyed", "plume-plucked", "pottle-deep", "pox-marked", "reeling-ripe", "rough-hewn", "rude-growing", "rump-fed", "shard-borne", "sheep-biting", "spur-galled", "swag-bellied", "tardy-gaited", "tickle-brained", "toad-spotted", "unchin-snouted", "weather-bitten"];
+
+          var noun = ["apple-john", "baggage", "barnacle", "bladder", "boar-pig", "bugbear", "bum-bailey", "canker-blossom", "clack-dish", "clotpole", "coxcomb", "codpiece", "death-token", "dewberry", "flap-dragon", "flax-wench", "flirt-gill", "foot-licker", "fustilarian", "giglet", "gudgeon", "haggard", "harpy", "hedge-pig", "horn-beast", "hugger-mugger", "joithead", "lewdster", "lout", "maggot-pie", "malt-worm", "mammet", "measle", "minnow", "miscreant", "moldwarp", "mumble-news", "nut-hook", "pigeon-egg", "pignut", "puttock", "pumpion", "ratsbane", "scut", "skainsmate", "strumpet", "varlot", "vassal", "whey-face", "wagtail"];
+
+          var adjective1Index = Math.floor(Math.random() * adjective_1.length);
+          var randomAdjective1 = adjective_1[adjective1Index];
+          var adjective2Index = Math.floor(Math.random() * adjective_2.length);
+          var randomAdjective2 = adjective_2[adjective2Index];
+          var nounIndex = Math.floor(Math.random() * noun.length);
+          var randomNoun = noun[nounIndex];
+
+          var insult = "Thou " + randomAdjective1 + " " + randomAdjective2 + " " + randomNoun + "!";
+          insult_output.innerHTML = insult;
+};
+
+function print_insult(e) {
+        if(e.keyCode === 13){
+          insult_generator();
+        }
+};
+      document.onkeydown = print_insult;
+
+      </script> <!-- how to print out result of function to screen?? -->
+    </body>
+  </html>
