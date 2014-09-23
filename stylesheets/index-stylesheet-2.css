@@ -16,12 +16,12 @@ body {
   width: 100%;
 }
 
-  #georgianna {
+  #header-text {
     font-family: "Amatic SC", cursive;
     font-size: 50px;
     color: white;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
   }
 
 #navigation {
@@ -34,7 +34,7 @@ body {
 }
 
     #navigation ul {
-      width: 90%;
+      width: 85%;
       list-style: none;
       text-align: center;
     }
@@ -44,110 +44,122 @@ body {
       margin-left: 5%;
     }
 
-    #navigation ul a:link {
+    #navigation a:link {
       font-size: 35px;
       color: skyBlue;
       text-align: center;
       text-decoration: none;
     }
 
-    #navigation ul a:hover {
+    #navigation a:hover {
       color: white;
     }
 
-    #navigation ul a:visited {
+    #navigation a:visited {
       color: white;
     }
 
 #content {
   width: 100%;
   background-image: url("IMG_0140.JPG");
-  min-height: 300px;
+  min-height: 150px;
 }
 
 .text-box {
   background-color: white;
   color: #222D3C;
-  min-height: 400px;
-  min-width: 25%;
-  max-width: 80%;
+  min-height: 150px;
 }
 
-.text-box a:link {
-  color: skyBlue;
-}
+    .text-box ul a:link {
+      color: skyBlue;
+    }
 
-.text-box a:hover {
-  color: black;
-}
+    .text-box ul a:hover {
+      color: black;
+    }
 
-#text-box-heading {
-  background-color: skyBlue;
-  color: white;
+    .text-box ul a:visited {
+      color: skyBlue;
+    }
+
+#date {
+  background-color: white;
   text-align: center;
-  font-size: 50px;
+  font-size: 20px;
   width: 80%;
   margin-left: 10%;
+  padding-top: 1%;
 }
 
-#left-box {
+#info-box {
   float: left;
-  margin: 7% 15% 7% 15%;
+  margin: 2% 15% 2% 15%;
   width:70%;
+  border-bottom: 30px solid skyBlue;
 }
-#left-box-heading {
+
+#info-box-heading {
   background-color: skyBlue;
   color: white;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   width: 100%;
 }
-#left-box ul {
-  padding-left: 25px;
-  padding-right: 10px;
-  margin-left: 0;
-}
+      #info-box h2 {
+          margin: 4% 4% 0 4%;
+        }
 
-#left-box p {
-  padding: 1%;
-}
+      #info-box ul {
+        padding-left: 25px;
+        padding-right: 10px;
+        margin-left: 0;
+      }
 
+      #info-box p {
+        margin: 4%;
+      }
 
-#right-box {
-  float: left;
-  margin: 7% 0 7% 5%;
-  max-width: 50%;
-}
-
-#right-box p {
-  padding: 0 5% 0 3%;
-}
-
-#right-box img {
-  width: 65%;
-  margin: 1% 4% 1% 2%;
-  float: left;
-}
+      #info-box img {
+        width: 50%;
+        max-width: 200px;
+        margin: 3% 4% 3% 4%;
+        float: right;
+      }
 
 #blog-box {
-  font-size: 20px;
+  font-size: 15px;
   width: 80%;
   margin-left: 10%;
   font-family: "Josefin Sans";
 }
 
-#blog-box p {
-  margin: 5px 2% 10px 2%;
-  padding-bottom: 2px;
-  padding-top: 0;
-  float: left;
+#blog-box-heading {
+  background-color: skyBlue;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  width: 80%;
+  margin-left: 10%;
 }
 
-#blog-box img {
-  width: 50%;
-  margin: 2%;
-  float: left;
-}
+      #blog-box p {
+        margin: 5px 2% 10px 2%;
+        padding-bottom: 2px;
+        padding-top: 0;
+        float: left;
+      }
+
+      #blog-box img {
+        width: 90%;
+        margin: 2% 5% 2% 5%;
+        float: left;
+      }
+
+      #blog-box a:link {
+         color: skyBlue;
+      }
+
 
 #previous-next {
   text-align: center;
@@ -156,23 +168,14 @@ body {
   background-color:skyBlue;
   clear: both;
 }
+    #previous-next a:link {
+      color: white;
+      text-decoration: none;
+    }
 
-#previous-next a:link {
-  color: white;
-  text-decoration: none;
-}
-
-#previous-next a:hover {
-  color: black;
-}
-
-#date {
-  background-color: white;
-  text-align: center;
-  font-size: 20px;
-  width: 80%;
-  margin-left: 10%;
-}
+    #previous-next a:hover {
+      color: black;
+    }
 
 #footer {
   height: 55px;
@@ -180,32 +183,30 @@ body {
   border-top: 5px solid white;
   border-bottom: 5px solid white;
   background-color: black;
-  color:white;
   clear: both;
+}
+
+#footer a:hover {
+  color: skyBlue;
 }
 
 .icon {
   width: 30px;
   height: 30px;
-  margin-left: 5%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 0 5px 9%;
+  padding: 15px 6px 0 6px;
+  float: left;
   border-radius: 100%;
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
   background-color: white;
-  float: left;
   text-decoration: none;
   color: black;
-  font-size: 12px;
-  padding: 15px 6px 0 6px;
 }
 
+@media (max-width: 500px) {
 
-@media (max-width: 400px) {
-
-
-#georgianna {
+#header_text {
   font-size: 40px;
 }
 
@@ -222,20 +223,29 @@ body {
   }
 
   #blog-box img {
-  max-width: 80%;
+  width: 95%;
+  margin: 2% 2.5% 2% 2.5%;
   }
 
-  #right-box img {
+  #info-box h2 {
+    font-size: 15px;
+  }
+
+  #info-box img {
     max-width: 50%;
   }
 
   .icon {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
-  #icon-text {
-    font-size: 15px;
-    margin: 10px;
+}
+
+@media (min-width: 1000px) {
+
+  .icon {
+    margin-left: 13%;
   }
+
 }
 
