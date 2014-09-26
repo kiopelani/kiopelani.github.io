@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato|Gloria+Hallelujah|Amatic+SC|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="cheatsheet_stylesheet.css">
+    <title>SQL CHEATSHEET</title>
+  </head>
+
+  <body>
+    <div id="header">
+      SQL CHEATSHEET
+    </div>
+    <div class="column">
+      Create a New Table
+      <table>
+        <tr><td>CREATE TABLE</td>
+        </tr>
+        <tr><td>CREATE TABLE table_name (<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;column_name1 type,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;column_name2 type<br>
+          );</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      Add Data Records to a Table
+      <table>
+        <tr><td>INSERT INTO</td>
+        </tr>
+        <tr><td>INSERT INTO table_name<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;(column_name1, column_name2)<br>
+          VALUES<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;('Value 1', 'Value 2');
+        </td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="column">
+     Select Data from Database
+      <table>
+        <tr><td>SELECT...FROM</td>
+        </tr>
+        <tr><td><strong>To select data from a single column in a table:</strong>
+          <br>SELECT column_name1<br>FROM table_name;
+          <p><strong>To select data from multiple columns in a table:</strong>
+          <br>
+          SELECT column_name1, column_name2<br>FROM table_name;
+          <p>
+          <strong>To select all data in a table:</strong><br>
+          SELECT *<br>FROM table_name;</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      Select Data By a Specified Condition
+      <table>
+        <tr><td>WHERE Clause</td>
+        </tr>
+        <tr><td>SELECT column_name1<br>
+          FROM table_name<br>
+          WHERE column_name operator some_value;
+          <p>
+          <strong>Example:</strong><br>
+          SELECT pet_name<br>
+          FROM dogs<br>
+          WHERE breed = 'Pug';
+        </td>
+        </tr>
+      </table>
+    </div>
+     <div class="column">
+      Combine/Select Data From Multiple Tables
+      <table>
+        <tr><td>INNER JOIN (or JOIN)</td>
+        </tr>
+        <tr><td>SELECT Table1.column1 FROM Table1<br>
+        JOIN Table2 ON Table1.column1 = Table2.column1;
+        </td></tr>
+      </table>
+    </div>
+    <div id="footer">
+      Created by Georgianna Gyzen
+    </div>
+
+  </body>
+  </html>

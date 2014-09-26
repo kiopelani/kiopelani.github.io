@@ -2,13 +2,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  color: white;
-  font-family: arial;
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 table {
   width: 100%;
-  color: black;
   font-size: 15px;
 }
 
@@ -19,6 +18,7 @@ td {
 
 tr:nth-child(odd) {
   background-color: skyBlue;
+  color: white;
 }
 tr:nth-child(even) {
   background-color: white;
@@ -31,6 +31,7 @@ tr:nth-child(even) {
   padding: 2% 0 2% 0;
   background-color: skyBlue;
   font-family: 'Amatic SC', cursive;
+  color: white;
 }
 
 .column {
@@ -38,7 +39,6 @@ tr:nth-child(even) {
   width: 40%;
   padding: 2% 5% 2% 5%;
   font-size: 20px;
-  color: black;
 }
 
 #footer {
@@ -49,5 +49,6 @@ tr:nth-child(even) {
   padding: 2% 0 2% 0;
   background-color: skyBlue;
   font-family: 'Amatic SC', cursive;
+  color: white;
   font-size: 25px;
 }
