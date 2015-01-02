@@ -1,48 +1,333 @@
-<html>
-  <head>
-       <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/index-stylesheet-2.css">
-      <title>
-        Georgianna Gyzen
-      </title>
+<!DOCTYPE html>
+<html lang="en">
 
-  </head>
+<head>
 
-  <body>
-    <div id="header">
-        <div id="header-text">
-          georgianna gyzen
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Georgianna Gyzen - Web Developer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Georgianna Gyzen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <img src="img/rainbow-blue-cloud.png" class="word-cloud">
+            </div>
+        </div>
+    </header>
+
+    <!-- about Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center about-header">
+                    <h2 class="section-heading">About</h2>
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/headshot.jpg" class="img-responsive img-circle" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8">
+                    <p class="text-muted about-description">I'm a Web Developer in the SF Bay Area who loves coding and cameras. I recently graduated from Stanford (the great class of '13!) and spent a year working in Hollywood at a talent agency before deciding to code full time.</p>
+                    <a href="#portfolio" class="page-scroll btn btn-xl">See My Work!</a>
+                </div>
+                <div class="col-md-2"></div>
+        </div>
+
+        <div class="row text-center"><div class="col-md-12"></div></div>
+
+        <div class="row text-center">
+             <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Specialties</h4>
+                    <p class="text-muted">Ruby on Rails, JavaScript, jQuery, Sinatra, SQL, CSS, HTML
+                        <br>
+                    <span class="text-muted-small">(Angular.js, PHP)</p>
+                </div>
+
+            <div class="col-md-4"></div>
+
+
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Interests</h4>
+                    <p class="text-muted">Tech, Writing, Filmmaking, Graphic Design, Art, Music, Theater, History, Geneology</p>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio &lt;code&gt;
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://hello-world-ftw.herokuapp.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-words">
+                               Led a team of 4 to build a customizable morning dashboard application in 6 days
+                           </div>
+                       </div>
+                       <img src="img/portfolio/icon-hello-world.png" class="img-responsive" alt="hello-world">
+                   </a>
+                    <div class="portfolio-caption">
+                        <h4>Hello World</h4>
+                        <p class="text-muted">Ruby on Rails, JavaScript, jQuery, Angular, CSS3, HTML5</p>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="http://storybook-kiope.herokuapp.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-words">
+                            A Sinatra app that helps writers share their novels with friends
+                        </div>
+                    </div>
+                    <img src="img/portfolio/icon-storybook.png" class="img-responsive" alt="storybook">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>StoryBook</h4>
+                    <p class="text-muted">Sinatra, Ruby, CSS3, HTML5, JavaScript, BCrypt</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="http://theslam-kiope.herokuapp.com/poems" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-words">
+                            Used to TDD to create an anonymous virtual poetry slam
+                        </div>
+                    </div>
+                    <img src="img/portfolio/icon-slam.png" class="img-responsive" alt="slam">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>The Slam</h4>
+                    <p class="text-muted">Ruby on Rails, AJAX, Rspec, Bootstrap </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://github.com/kiopelani" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/icon-github.png" class="img-responsive" alt="github">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Github</h4>
+                        <p class="text-muted">Check out my Github </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>
+                    <h2 class="section-heading">Portfolio &lt;other&gt;<p></h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="http://kiopelani.github.io/blog-home.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/icon-blog.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Blog</h4>
+                    <p class="text-muted">Tech and Film Blog</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="http://sjeaa.stanford.edu/contents102.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/icon-sjeaa.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Stanford Journal of East Asian Affairs</h4>
+                    <p class="text-muted">Layout Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="https://www.youtube.com/watch?v=cXRjIxNblyg" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/gangnam.jpg" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Stanford Gangnam Style</h4>
+                    <p class="text-muted">Director and Editor</p>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <div id="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog-home.html">Blog</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="dbc.html">DBC</a></li>
-        </ul>
-    </div>
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/jump.jpg" class="img-responsive img-circle" alt="jump">
+                        <p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:kiopelani@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/kiopelani" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://github.com/kiopelani" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/pub/georgianna-kiopelani-gyzen/3a/843/650" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-     <div id="content">
-      <div class="text-box" id="info-box">
-        <div id="info-box-heading">
-          Hello!
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Say hi!</p>
+                </div>
+            </div>
         </div>
-        <img src="blog-posts/images/headshot.png" alt="headshot">
-        <h2>Hi I'm Georgianna!</h2>
-        <p>Born and bred in Irvine, California, I majored in Film and Media Studies at Stanford, then spent my first post-graduation year working at a Hollywood talent agency.
-        <p>Now I'm learning to code at DBC in San Francisco!</p>
-      </div>
-    </div>
+    </section>
 
-    <div id="footer">
-        <a class="icon" href="https://www.facebook.com/kiope">facebook</a>
-        <a class="icon" href="https://twitter.com/kiopelani">twitter</a>
-        <a class="icon" href="mailto:kiopelani@gmail.com">email</a>
-        <a class="icon" href="https://github.com/kiopelani">github</a>
-        <a class="icon" href="http://www.linkedin.com/pub/georgianna-kiopelani-gyzen/3a/843/650">linkedin</a>
-    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Georgianna Gyzen 2014</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  </body>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
 </html>
