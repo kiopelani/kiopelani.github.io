@@ -1,0 +1,15 @@
+.headshot {
+  width: 200px;
+}
+
+.contact-img {
+  width: 200px;
+}
+
+.about-me-list {
+  list-style-type: none;
+}
+
+section {
+  border: 1px solid black;
+}
