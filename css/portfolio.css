@@ -1,15 +1,233 @@
 .headshot {
-  width: 200px;
+  margin: 2%;
+  height: 200px;
 }
 
 .contact-img {
-  width: 200px;
+  margin-top: 2%;
+  width: 35%;
+  border: 5px solid black;
+  border-radius: 50%;
+  box-shadow: 2px 1px 10px 2px #888888;
+}
+
+.contact-list {
+  list-style-type: none;
+  font-size: 5em;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.contact-list li {
+  display: inline;
+}
+
+.contact-list li a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-list li a:hover{
+  text-decoration: none;
+  color: orange;
+}
+
+.about {
 }
 
 .about-me-list {
-  list-style-type: none;
+  list-style-type: square;
+  text-align: left;
 }
 
 section {
   border: 1px solid black;
+  box-shadow: 2px 5px 10px 5px #888888;
+  margin-top: 0;
+  padding-top: 80px;
+  padding-bottom: 2%;
 }
+
+section:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+.brand a {
+  margin: .5% 0 1% 1%;
+  float: left;
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.brand a:hover {
+  color: orange;
+}
+
+.fixed-navbar {
+  border: 2px solid black;
+  min-height: 50px;
+  padding: 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+  opacity: .7;
+}
+
+.fixed-navbar ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 2%;
+  font-size: 1.2em;
+}
+
+.fixed-navbar ul li {
+  display: inline;
+}
+
+.fixed-navbar ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: gray;
+}
+
+.fixed-navbar ul li a:hover{
+  color: orange;
+}
+
+.landing {
+  text-align: center;
+  font-size: 2em;
+  padding: 15% 0 20% 0;
+}
+
+.landing .sub-heading{
+  color: orange;
+}
+
+.about-left {
+  float:left;
+  width: 30%;
+}
+
+.about-right {
+  float: left;
+  margin-left: 10%;
+  width: 50%;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills-tech {
+  float: left;
+  width: 30%;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.skills-art {
+  float: left;
+  margin-left: 5%;
+  margin-right: 15%;
+  width: 30%;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio-item {
+    right: 0;
+    margin: .166%;
+    width: 33%;
+    float: left;
+}
+
+
+.portfolio-item img {
+  width: 100%;
+}
+
+
+
+/*.portfolio-item a:link{
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}*/
+
+/*.portfolio-item a:hover{
+  transition: .6s;
+  opacity: .2;
+   -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+
+}*/
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  padding: 1% 0 1% 2%;
+}
+
+
+
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+    color: black;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    background: rgba(192,192,192,0.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+/*    top: 25%;
+*/  padding: 20% 3% 1% 3%;
+    width: 94%;
+    height: 79%;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h5 {
+    margin: 0;
+}
+
+
+

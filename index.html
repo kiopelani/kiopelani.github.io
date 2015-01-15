@@ -2,64 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/my_framework.css">
   <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-  <title>kiope gyzen</title>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <title>Kiope Gyzen</title>
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul>
-     <li><a href="#about">KIOPE GYZEN</a></li>
-     <li><a href="#skills">Skills</a></li>
-     <li><a href="#portfolio">Portfolio</a></li>
-     <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="fixed-navbar" id="navbar-container">
+    <span class="brand">
+      <a href="#landing">{Kiope Gyzen}</a>
+    </span>
+        <ul>
+          <li><a href="#about">About</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#contact">Contact</a></li>
+        </ul>
   </nav>
-
-  <section id="about">
-    <img class="headshot" src="img/headshot.jpg" alt="headshot">
-    <ul class="about-me-list">
-      <li>// Software Developer in the Bay Area</li>
-      <li>// Filmmaker turned Computer Programmer</li>
-      <li>// Stanford graduate, class of 2013</li>
-      <li>// Optimistic problem-solver and inquisitive self-learner</li>
-      <li>// Strong understanding of storytelling and design</li>
-    </ul>
+<section id="landing" class="landing">
+  <h1>Kiope Gyzen</h1>
+  <h3 class="sub-heading">Software Developer</h3>
+</section>
+  <section id="about" class="about">
+    <div class="about-left">
+      <img class="headshot" src="img/headshot.jpg" alt="headshot">
+    </div>
+    <div class="about-right">
+      <h1>Who Am I?</h1>
+      <ul class="about-me-list">
+        <li>Full-stack Software Developer</li>
+        <li>Stanford Graduate (2013), Film & Media Studies</li>
+        <li>Documentary Filmmaker</li>
+        <li>Efficient storyteller and designer</li>
+        <li>Optimistic problem-solver and inquisitive self-learner</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="skills">
     <h1>Skills</h1>
-    <h3>Tech</h3>
-    <p>Ruby on Rails, JavaScript, jQuery, Sinatra, SQL, CSS, HTML5, Git, Heroku, PHP</p>
-    <h3>Art</h3>
-    <p>Filmmaking, Photography, Graphic Design, Layout Design, Writing, Music-making, Theater Lighting Design</p>
+    <div class="skills-tech">
+      <h3>Tech</h3>
+      <p>Ruby on Rails, JavaScript, jQuery, Sinatra, SQL, CSS, HTML5, Rspec, Git, Heroku, PHP</p>
+    </div>
+    <div class="skills-art">
+      <h3>Art</h3>
+      <p>Filmmaking, Photography, Graphic Design, Layout Design, Writing, Music-making, Theater Lighting Design</p>
+    </div>
   </section>
 
-  <section id="portfolio">
+  <section id="portfolio" class="portfolio">
     <h1>Portfolio</h1>
-    <div>Hello-World: led team of 4 to build a customizable morning dashboard app in 6 days // Rails, JavaScript, APIs</div>
-    <div>StoryBook: A Sinatra app that helps writers share their novels with friends // Sinatra, Ruby, HTML, CSS</div>
-    <div>The Slam: Used TDD to create an anonymous virtual poetry slam // Rails, JavaScript, AJAX, Rspec</div>
-    <div>Tech Blog</div>
-    <div>Stanford Journal of East Asian Studies: Layout Design</div>
-    <div>Stanford Gangnam Style: Film Directing and Editing</div>
+    <div class="portfolio-item">
+      <a href="http://hello-world-ftw.herokuapp.com/" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>HELLO WORLD</h3>
+            <h4>Led a team of 4 to build a news dashboard app in 6 days</h4>
+            <p>
+            <h5><em>Rails, JavaScript, jQuery, Devise, APIs</em></h5>
+          </div>
+        </div>
+      <img src="img/portfolio/icon-hello-world.png">
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="http://storybook-kiope.herokuapp.com/" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>STORYBOOK</h3>
+            <h4>A Sinatra app that helps writers share their novels with friends</h4>
+            <p>
+            <h5><em>Ruby, Sinatra, CSS, HTML5, Bcrypt</em></h5>
+          </div>
+        </div>
+        <img src="img/portfolio/icon-storybook.png">
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="http://theslam-kiope.herokuapp.com/poems" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>THE SLAM</h3>
+            <h4>Used TDD to create an anonymous virtual poetry slam</h4>
+            <p>
+            <h5><em>Rails, Rspec, AJAX, Bootstrap, Capybara</em></h5>
+          </div>
+        </div>
+        <img src="img/portfolio/icon-slam.png">
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="http://kiopelani.github.io/blog/blog-home.html" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>My Blog</h3>
+            <h4>Thoughts on tech, life, and learning to code</h4>
+            <p>
+            <h5><em>HTML, CSS</em></h5>
+          </div>
+        </div>
+        <img src="img/portfolio/icon-blog.png">
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="http://sjeaa.stanford.edu/contents102.html" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>Stanford Journal of East Asian Affairs</h3>
+            <h4>Layout Design Editor</h4>
+            <p>
+            <h5><em>Adobe InDesign, Adobe Illustrator</em></h5>
+          </div>
+        </div>
+        <img src="img/portfolio/icon-sjeaa.png">
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="https://www.youtube.com/watch?v=cXRjIxNblyg" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>Stanford Gangnam Style</h3>
+            <h4>Co-Director / Editor / Cinematographer</h4>
+            <p>
+            <h5><em>Final Cut Pro, Canon 7D</em></h5>
+          </div>
+        </div>
+        <img src="img/portfolio/gangnam.jpg">
+      </a>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <h1>Contact Me</h1>
     <img class="contact-img" src="img/jump.jpg" alt="contact-img">
-    <ul>
-      <li><a href="mailto:kiopelani@gmail.com">Email</a></li>
-      <li><a href="https://github.com/kiopelani">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/kiopelani">Linkedin</a></li>
-      <li><a href="https://twitter.com/kiopelani">Twitter</a></li>
-      <li><a href="#">Resume</a></li>
+    <ul class="contact-list">
+      <li><a href="mailto:kiopelani@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a href="https://github.com/kiopelani"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/kiopelani"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a href="https://twitter.com/kiopelani"><i class="fa fa-twitter"></i></a></li>
     </ul>
   </section>
 
   <footer>
     <p> Kiope Gyzen &copy; 2015</p>
   </footer>
+  <script src="js/portfolio.js"></script>
 </body>
 </html>
