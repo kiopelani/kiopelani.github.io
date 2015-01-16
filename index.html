@@ -15,9 +15,8 @@
     <span class="brand">
       <a href="#landing">{Kiope Gyzen}</a>
     </span>
-        <ul>
+        <ul id="nav-links">
           <li><a href="#about">About</a></li>
-           <li><a href="#skills">Skills</a></li>
            <li><a href="#portfolio">Portfolio</a></li>
            <li><a href="#contact">Contact</a></li>
         </ul>
@@ -26,36 +25,37 @@
   <h1>Kiope Gyzen</h1>
   <h3 class="sub-heading">Software Developer</h3>
 </section>
-  <section id="about" class="about">
-    <div class="about-left">
-      <img class="headshot" src="img/headshot.jpg" alt="headshot">
-    </div>
-    <div class="about-right">
+
+<section id="about" class="about">
+  <div class="about-container col-12">
+    <img class="headshot col-6" src="img/headshot.jpg" alt="headshot">
+    <span class="about-right col-6">
       <h1>Who Am I?</h1>
       <ul class="about-me-list">
         <li>Full-stack Software Developer</li>
         <li>Stanford Graduate (2013), Film & Media Studies</li>
         <li>Documentary Filmmaker</li>
-        <li>Efficient storyteller and designer</li>
+        <li>Storyteller and Designer</li>
         <li>Optimistic problem-solver and inquisitive self-learner</li>
       </ul>
-    </div>
-  </section>
+    </span>
+  </div>
 
-  <section id="skills" class="skills">
-    <h1>Skills</h1>
+  <div class="skills-container col-12">
     <div class="skills-tech">
-      <h3>Tech</h3>
+      <h3>Tech Skills</h3>
       <p>Ruby on Rails, JavaScript, jQuery, Sinatra, SQL, CSS, HTML5, Rspec, Git, Heroku, PHP</p>
     </div>
     <div class="skills-art">
-      <h3>Art</h3>
+      <h3>Art Skills</h3>
       <p>Filmmaking, Photography, Graphic Design, Layout Design, Writing, Music-making, Theater Lighting Design</p>
     </div>
-  </section>
+  </div>
+  </div>
+</section>
 
   <section id="portfolio" class="portfolio">
-    <h1>Portfolio</h1>
+    <h1>Tech Portfolio</h1>
     <div class="portfolio-item">
       <a href="http://hello-world-ftw.herokuapp.com/" target="_blank" class="portfolio-link">
         <div class="portfolio-hover">
@@ -97,6 +97,8 @@
         <img src="img/portfolio/icon-slam.png">
       </a>
     </div>
+
+    <h1>Art Portfolio</h1>
 
     <div class="portfolio-item">
       <a href="http://kiopelani.github.io/blog/blog-home.html" target="_blank" class="portfolio-link">

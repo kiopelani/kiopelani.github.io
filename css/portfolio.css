@@ -1,11 +1,14 @@
 .headshot {
-  margin: 2%;
-  height: 200px;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-img {
   margin-top: 2%;
   width: 35%;
+  max-width: 400px;
+  min-width: 300px;
   border: 5px solid black;
   border-radius: 50%;
   box-shadow: 2px 1px 10px 2px #888888;
@@ -33,6 +36,15 @@
 }
 
 .about {
+  max-height: 900px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .about-me-list {
@@ -44,20 +56,21 @@ section {
   border: 1px solid black;
   box-shadow: 2px 5px 10px 5px #888888;
   margin-top: 0;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 2%;
+  margin-bottom: 0;
 }
 
 section:after {
    content: " ";
    display: block;
-   height: 0;
-   clear: both;
+/*   height: 0;
+*/   clear: both;
 }
 
 
 .brand a {
-  margin: .5% 0 1% 1%;
+  padding: 5px 0 1% 1%;
   float: left;
   text-decoration: none;
   font-size: 2em;
@@ -70,7 +83,7 @@ section:after {
 
 .fixed-navbar {
   border: 2px solid black;
-  min-height: 50px;
+  height: 50px;
   padding: 1%;
   position: fixed;
   top: 0;
@@ -79,13 +92,13 @@ section:after {
   z-index: 9999;
   background-color: black;
   color: white;
-  opacity: .7;
+  opacity: 1;
 }
 
 .fixed-navbar ul {
   list-style-type: none;
   float: right;
-  margin-right: 2%;
+  margin-right: 5%;
   font-size: 1.2em;
 }
 
@@ -95,7 +108,7 @@ section:after {
 
 .fixed-navbar ul li a {
   text-decoration: none;
-  font-size: 1em;
+  margin-right: 20px;
   color: gray;
 }
 
@@ -107,6 +120,10 @@ section:after {
   text-align: center;
   font-size: 2em;
   padding: 15% 0 20% 0;
+  height: 60vh;
+ /* background-image: url('../img/rainbow.JPG');
+  background-size: 400vw;
+  color: white;*/
 }
 
 .landing .sub-heading{
@@ -115,18 +132,28 @@ section:after {
 
 .about-left {
   float:left;
-  width: 30%;
+  height: 400px;
+  padding: 0;
 }
+
 
 .about-right {
-  float: left;
-  margin-left: 10%;
-  width: 50%;
+  margin-top: 10%;
+  font-size: 1.4em;
 }
 
-.skills {
+.skills-container {
+  clear: both;
   text-align: center;
-}
+  color: white;
+  background-color: black;
+  padding: 2% 0 2% 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1em;
+/*  height: 30%;
+*/}
+
 
 .skills-tech {
   float: left;
@@ -146,9 +173,15 @@ section:after {
   text-align: center;
 }
 
+.portfolio h1 {
+  clear: both;
+  padding-top: 2%;
+}
+
 .portfolio-item {
     right: 0;
-    margin: .166%;
+    margin: .1666%;
+    min-width: 300px;
     width: 33%;
     float: left;
 }
@@ -227,6 +260,89 @@ footer {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h5 {
     margin: 0;
+}
+
+@media (max-width: 912px) {
+
+  body  {
+    background-color: white;
+  }
+
+  .about-right {
+    font-size: 1em;
+  }
+
+  .skills-container {
+    font-size: 1em;
+  }
+
+  .portfolio-item {
+    margin: .1666%;
+    width: 49.5%;
+    min-width: 200px;
+  }
+
+}
+
+@media (max-width: 595px) {
+  .portfolio-item {
+    margin: 1% 10% 1% 10%;
+    width: 80%;
+    min-width: 200px;
+    max-width: 500px;
+  }
+
+
+  .brand a {
+    font-size: 1.5em;
+    padding: 2%;
+  }
+
+  .fixed-navbar ul {
+    font-size: .8em;
+  }
+
+  .fixed-navbar ul li a {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+  .headshot {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 50%;
+    border: 5px solid black;
+    border-radius: 50%;
+  }
+
+
+  .about-right {
+    text-align: center;
+    margin: 2% 10% 0 10%;
+    width: 80%;
+  }
+
+  .about-right h1 {
+    margin: 0;
+  }
+
+
+.skills-container {
+  font-size: .9em;
+}
+
+  .contact-list {
+  font-size: 3em;
+  }
+
+  .contact-img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 70%;
+  }
+
 }
 
 
