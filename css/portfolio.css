@@ -1,0 +1,494 @@
+body {
+font-family: 'News Cycle', sans-serif;
+}
+
+.headshot {
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  max-height: 900px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.about-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-list {
+  list-style-type: square;
+  text-align: left;
+}
+
+section {
+  margin-top: 0;
+  padding-top: 70px;
+  padding-bottom: 2%;
+  margin-bottom: 0;
+}
+
+section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+
+.brand a {
+  padding: 2px 0 1% 1%;
+  float: left;
+  text-decoration: none;
+  font-size: 3em;
+  color: white;
+}
+
+.brand a:hover {
+  color: pink;
+}
+
+.fixed-navbar {
+  height: 60px;
+  padding: 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+  opacity: 1;
+  font-family: 'Pathway Gothic One', sans-serif;
+
+}
+
+.red {
+  color: red;
+}
+
+.fixed-navbar ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 2%;
+  font-size: 1.4em;
+}
+
+.fixed-navbar ul li {
+  display: inline;
+}
+
+.fixed-navbar ul li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
+}
+
+.fixed-navbar ul li a:hover{
+  color: red;
+}
+
+.landing {
+  text-align: center;
+  font-size: 2em;
+  padding: 20% 0 20% 0;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: white;
+}
+
+.landing-img {
+  width: 10%;
+  float: left;
+}
+
+#img0 {
+  opacity: 0;
+}
+
+#img1 {
+  opacity: 0;
+}
+
+#img2 {
+  opacity: 0;
+}
+
+#img3 {
+  opacity: 0;
+}
+
+#img4 {
+  opacity: 0;
+}
+
+#img5 {
+  opacity: 0;
+}
+
+#img6 {
+  opacity: 0;
+}
+
+#img7 {
+  opacity: 0;
+}
+
+#img8 {
+  opacity: 0;
+}
+
+#img9 {
+  opacity: 0;
+}
+
+#title {
+  font-size: 2em;
+  color: red;
+  margin-top: 25%;
+}
+
+#title-name {
+  color: black;
+  font-size: 1em;
+  opacity: 0;
+}
+
+#title-sub {
+  font-size: .6em;
+  opacity: 0;
+}
+
+
+.landing .sub-heading{
+  color: red;
+  background-color: black;
+/*  background-color: rgba(255, 255, 255, .5);
+*/  margin-right: 30%;
+  margin-left: 30%;
+
+}
+
+.landing h1 {
+  background-color: black;
+/*  background-color: rgba(255, 255, 255, .8);
+*/  margin-right: 25%;
+  margin-left: 25%;
+  color: white;
+}
+
+.about-left {
+  float:left;
+  height: 400px;
+  padding: 0;
+}
+
+.about-right {
+  margin-top: 10%;
+  font-size: 1.4em;
+}
+
+
+.skills-container {
+  clear: both;
+  text-align: center;
+  color: white;
+  padding: 6% 0 6% 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  opacity: .5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+
+
+.skills-container h2 {
+  margin-bottom: 0;
+  color: red;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+}
+
+.skills-tech {
+  float: left;
+  width: 30%;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 0 2% 2% 2%;
+}
+
+.skills-art {
+  float: left;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 0 2% 2% 2%;
+  width: 30%;
+}
+
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio h1 {
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: .5%;
+  font-size: 3em;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-bottom: 1%;
+}
+
+.portfolio .art-heading {
+  padding-top: 8%;
+  padding-bottom: .5%;
+  margin-bottom: 1%;
+}
+
+.portfolio-item {
+    right: 0;
+    margin: .1666%;
+    min-width: 300px;
+    width: 33%;
+    float: left;
+}
+
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.contact {
+  text-align: center;
+  font-size: 5em;
+}
+
+.contact h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contact-img {
+  margin-top: 2%;
+  width: 33%;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 4%;
+  clear: both;
+  font-size: .8em;
+}
+
+.contact-list li {
+  display: inline;
+}
+
+.contact-list li a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-list li a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+
+footer {
+  padding: 1% 0 1% 2%;
+  box-shadow: 2px 1px 10px 2px #888888;
+  color: white;
+  background-color: black;
+}
+
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+    color: black;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    background: rgba(0, 0, 0, .9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    padding: 12% 3% 1% 3%;
+    width: 94%;
+    height: 79%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  font-size: 2em;
+  color: red;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h5 {
+    margin: 0;
+    font-size: .9em;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+@media (min-width: 1930px){
+
+  .skills-container {
+    padding: 1% 0 1% 0;
+    margin: 0;
+  }
+
+  .contact {
+    font-size: 12em;
+  }
+
+  .headshot {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 946px) {
+
+  body  {
+    background-color: white;
+  }
+
+  .about-right {
+    font-size: .9em;
+  }
+
+  .skills-container h2 {
+    font-size: 1.5em;
+  }
+
+  .skills-container {
+    font-size: 1em;
+  }
+
+  .portfolio-item {
+    margin: .1666%;
+    width: 49.5%;
+    min-width: 200px;
+  }
+
+  .contact {
+    font-size: 5em;
+  }
+
+}
+
+@media (max-width: 629px) {
+
+  #title-name {
+    font-size: .5em;
+  }
+
+  #title-sub {
+    font-size: .25em;
+  }
+  .portfolio-item {
+    margin: 1% 10% 1% 10%;
+    width: 80%;
+    min-width: 200px;
+    max-width: 500px;
+  }
+
+  .fixed-navbar {
+    height: 50px;
+  }
+
+
+  .brand a {
+    font-size: 1.25em;
+    padding: 3% 0 0 1%;
+  }
+
+
+  .fixed-navbar ul {
+    font-size: .8em;
+    padding-top: 1%
+  }
+
+  .fixed-navbar ul li a {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+  .headshot {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .about-right {
+    text-align: center;
+    margin: 2% 10% 0 10%;
+    width: 80%;
+  }
+
+  .about-right h1 {
+    margin: 0;
+  }
+
+
+  .skills-container h2 {
+    font-size: 1.2em;
+  }
+
+  .skills-container {
+    font-size: .8em;
+  }
+
+  .contact {
+  font-size: 3em;
+  }
+
+  .contact-img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 70%;
+  }
+
+}
+
+
+
