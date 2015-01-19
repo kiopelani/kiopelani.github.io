@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/my_framework.css">
   <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Pathway+Gothic+One|Oswald|Montserrat' rel='stylesheet' type='text/css'>
+  <link rel='shortcut icon' type='image/x-icon' href='k-icon.ico'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Kiope Gyzen</title>
 </head>
@@ -13,17 +15,26 @@
 <body>
   <nav class="fixed-navbar" id="navbar-container">
     <span class="brand">
-      <a href="#landing">{Kiope Gyzen}</a>
+      <a href="#landing"><span class="red">KIOPE</span>GYZEN</a>
     </span>
         <ul id="nav-links">
-          <li><a href="#about">About</a></li>
-           <li><a href="#portfolio">Portfolio</a></li>
-           <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">about</a></li>
+           <li><a href="#portfolio">portfolio</a></li>
+           <li><a href="#contact">contact</a></li>
         </ul>
   </nav>
 <section id="landing" class="landing">
-  <h1>Kiope Gyzen</h1>
-  <h3 class="sub-heading">Software Developer</h3>
+  <img src="img/kick.jpg" class="landing-img" id="img0">
+  <img src="img/golf.jpg" class="landing-img" id="img1">
+  <img src="img/camera.jpg" class="landing-img" id="img2">
+  <img src="img/uke.jpg" class="landing-img" id="img3">
+  <img src="img/kick.jpg" class="landing-img" id="img4">
+  <img src="img/golf.jpg" class="landing-img" id="img5">
+  <img src="img/camera.jpg" class="landing-img" id="img6">
+  <img src="img/uke.jpg" class="landing-img" id="img7">
+  <img src="img/kick.jpg" class="landing-img" id="img8">
+  <img src="img/golf.jpg" class="landing-img" id="img9">
+  <div id="title"><span id="title-name">KIOPE GYZEN</span><span id="title-sub"> SOFTWARE DEVELOPER</span></div>
 </section>
 
 <section id="about" class="about">
@@ -35,7 +46,7 @@
         <li>Full-stack Software Developer</li>
         <li>Stanford Graduate (2013), Film & Media Studies</li>
         <li>Documentary Filmmaker</li>
-        <li>Storyteller and Designer</li>
+        <li>Designer and Storyteller</li>
         <li>Optimistic problem-solver and inquisitive self-learner</li>
       </ul>
     </span>
@@ -43,19 +54,20 @@
 
   <div class="skills-container col-12">
     <div class="skills-tech">
-      <h3>Tech Skills</h3>
-      <p>Ruby on Rails, JavaScript, jQuery, Sinatra, SQL, CSS, HTML5, Rspec, Git, Heroku, PHP</p>
+      <h2><i class="fa fa-desktop" style="color: white; margin-right: 2%"></i> TECH SKILLS</h2>
+
+      ruby &middot; rails &middot; javascript &middot; jquery &middot; sinatra &middot; sql &middot; css &middot; html5 &middot; rspec &middot; git &middot; heroku &middot; php
     </div>
     <div class="skills-art">
-      <h3>Art Skills</h3>
-      <p>Filmmaking, Photography, Graphic Design, Layout Design, Writing, Music-making, Theater Lighting Design</p>
+      <h2><i class="fa fa-paint-brush" style="color: white"></i> ART SKILLS</h2>
+      filmmaking &middot; photography &middot; graphic design &middot; layout design &middot; writing &middot; music-making &middot; theater lighting design
     </div>
   </div>
   </div>
 </section>
 
   <section id="portfolio" class="portfolio">
-    <h1>Tech Portfolio</h1>
+    <h1>PORTFOLIO <span class="red">{ TECH }</span></h1>
     <div class="portfolio-item">
       <a href="http://hello-world-ftw.herokuapp.com/" target="_blank" class="portfolio-link">
         <div class="portfolio-hover">
@@ -63,7 +75,8 @@
             <h3>HELLO WORLD</h3>
             <h4>Led a team of 4 to build a news dashboard app in 6 days</h4>
             <p>
-            <h5><em>Rails, JavaScript, jQuery, Devise, APIs</em></h5>
+            <i class="fa fa-search-plus"></i>
+            <h5>Rails, JavaScript, jQuery, Devise, APIs</h5>
           </div>
         </div>
       <img src="img/portfolio/icon-hello-world.png">
@@ -77,7 +90,9 @@
             <h3>STORYBOOK</h3>
             <h4>A Sinatra app that helps writers share their novels with friends</h4>
             <p>
-            <h5><em>Ruby, Sinatra, CSS, HTML5, Bcrypt</em></h5>
+            <i class="fa fa-search-plus"></i>
+            <h5>Ruby, Sinatra, CSS, HTML5, Bcrypt</h5>
+
           </div>
         </div>
         <img src="img/portfolio/icon-storybook.png">
@@ -91,23 +106,54 @@
             <h3>THE SLAM</h3>
             <h4>Used TDD to create an anonymous virtual poetry slam</h4>
             <p>
-            <h5><em>Rails, Rspec, AJAX, Bootstrap, Capybara</em></h5>
+            <i class="fa fa-search-plus red"></i>
+            <h5>Rails, Rspec, AJAX, Bootstrap, Capybara</h5>
           </div>
         </div>
         <img src="img/portfolio/icon-slam.png">
       </a>
     </div>
 
-    <h1>Art Portfolio</h1>
+    <div class="portfolio-item">
+      <a href="#" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>THIS SITE</h3>
+            <h4>Built from scratch! No frameworks or templates.</h4>
+            <p>
+            <i class="fa fa-search-plus red"></i>
+            <h5>CSS, HTML5, jQuery</h5>
+          </div>
+        </div>
+        <img src="img/portfolio/gangnam.jpg">
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="https://github.com/kiopelani" target="_blank" class="portfolio-link">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <h3>MY GITHUB</h3>
+            <h4>Check my github for more</h4>
+            <p>
+            <i class="fa fa-search-plus"></i>
+          </div>
+        </div>
+        <img src="img/portfolio/icon-github.png">
+      </a>
+    </div>
+
+    <h1 class="art-heading">PORTFOLIO <span class="red">{ ART }</span></h1>
 
     <div class="portfolio-item">
       <a href="http://kiopelani.github.io/blog/blog-home.html" target="_blank" class="portfolio-link">
         <div class="portfolio-hover">
           <div class="portfolio-hover-content">
-            <h3>My Blog</h3>
+            <h3>MY BLOG</h3>
             <h4>Thoughts on tech, life, and learning to code</h4>
             <p>
-            <h5><em>HTML, CSS</em></h5>
+            <i class="fa fa-search-plus"></i>
+            <h5>HTML, CSS</h5>
           </div>
         </div>
         <img src="img/portfolio/icon-blog.png">
@@ -121,7 +167,8 @@
             <h3>Stanford Journal of East Asian Affairs</h3>
             <h4>Layout Design Editor</h4>
             <p>
-            <h5><em>Adobe InDesign, Adobe Illustrator</em></h5>
+            <i class="fa fa-search-plus"></i>
+            <h5>Adobe InDesign, Adobe Illustrator</h5>
           </div>
         </div>
         <img src="img/portfolio/icon-sjeaa.png">
@@ -135,7 +182,8 @@
             <h3>Stanford Gangnam Style</h3>
             <h4>Co-Director / Editor / Cinematographer</h4>
             <p>
-            <h5><em>Final Cut Pro, Canon 7D</em></h5>
+            <i class="fa fa-search-plus"></i>
+            <h5>Final Cut Pro, Canon 7D</h5>
           </div>
         </div>
         <img src="img/portfolio/gangnam.jpg">
@@ -144,7 +192,7 @@
   </section>
 
   <section id="contact" class="contact">
-    <h1>Contact Me</h1>
+    <h1>SAY <span class="red">HI</span></h1>
     <img class="contact-img" src="img/jump.jpg" alt="contact-img">
     <ul class="contact-list">
       <li><a href="mailto:kiopelani@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
@@ -155,7 +203,7 @@
   </section>
 
   <footer>
-    <p> Kiope Gyzen &copy; 2015</p>
+    <p> Site made by Kiope Gyzen &copy; 2015</p>
   </footer>
   <script src="js/portfolio.js"></script>
 </body>
