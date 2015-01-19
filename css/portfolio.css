@@ -8,6 +8,22 @@ font-family: 'News Cycle', sans-serif;
   padding: 0;
 }
 
+#title a:link{
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+#title a:hover{
+  color: red;
+}
+
+#down-arrow {
+  display: none;
+}
+
 .about {
   max-height: 900px;
   margin-bottom: 0;
@@ -98,9 +114,10 @@ section:after {
 .landing {
   text-align: center;
   font-size: 2em;
-  padding: 20% 0 20% 0;
+  padding: 20% 0 5% 0;
   font-family: 'Pathway Gothic One', sans-serif;
   color: white;
+  box-shadow: 2px 1px 10px 2px #888888;
 }
 
 .landing-img {
@@ -203,7 +220,7 @@ section:after {
   margin: 0;
   overflow: hidden;
   background-color: black;
-  opacity: .5;
+  opacity: .7;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
 }
@@ -267,7 +284,8 @@ section:after {
 
 .contact {
   text-align: center;
-  font-size: 5em;
+  font-size: 7em;
+  box-shadow: 2px 1px 10px 2px #888888;
 }
 
 .contact h1 {
@@ -370,13 +388,19 @@ footer {
 
 @media (min-width: 1930px){
 
+  .about-right {
+    margin-top: 10%;
+    font-size: 2em;
+    }
+
+
   .skills-container {
     padding: 1% 0 1% 0;
     margin: 0;
   }
 
   .contact {
-    font-size: 12em;
+    font-size: 5em;
   }
 
   .headshot {
@@ -409,7 +433,7 @@ footer {
   }
 
   .contact {
-    font-size: 5em;
+    font-size: 3em;
   }
 
 }

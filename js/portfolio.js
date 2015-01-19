@@ -21,7 +21,9 @@ $(document).ready(function(){
                     $('#img9').fadeTo(300, .5);
                     $('#img9').fadeTo(300, 1, function(){
                       $('#title-name').fadeTo(1000, 1, function(){
-                        $('#title-sub').fadeTo(1000, 1);
+                        $('#title-sub').fadeTo(1000, 1, function(){
+                          $('#down-arrow').slideDown(500);
+                        });
                       });
                     });
                   });
@@ -37,7 +39,7 @@ $(document).ready(function(){
 $('.skills-container').hover(function(){
   $('.skills-container').fadeTo(500, 1);},
   function(){
-    $('.skills-container').fadeTo(500, .5);
+    $('.skills-container').fadeTo(500, .7);
   }
   )
 
