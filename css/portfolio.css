@@ -8,17 +8,21 @@ font-family: 'News Cycle', sans-serif;
   padding: 0;
 }
 
-#title a:link{
+#landing a:link{
   text-decoration: none;
   color: black;
-  font-size: 1em;
-  margin: 0;
+  margin: 10% 0 0 0;
   padding: 0;
 }
 
-#title a:hover{
+#landing a:hover{
   color: red;
 }
+
+#landing a:visited {
+  color: black;
+}
+
 
 #down-arrow {
   display: none;
@@ -169,6 +173,7 @@ section:after {
   font-size: 2em;
   color: red;
   margin-top: 25%;
+  margin-bottom: 5%;
 }
 
 #title-name {
@@ -292,6 +297,7 @@ section:after {
   font-family: 'Pathway Gothic One', sans-serif;
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 1em;
 }
 
 .contact-img {
@@ -388,11 +394,19 @@ footer {
 
 @media (min-width: 1930px){
 
+  #title-name {
+    color: black;
+    font-size: 2em;
+  }
+
+  #title-sub {
+    font-size: 1em;
+  }
+
   .about-right {
     margin-top: 10%;
     font-size: 2em;
-    }
-
+  }
 
   .skills-container {
     padding: 1% 0 1% 0;
@@ -406,6 +420,11 @@ footer {
   .headshot {
     max-width: 800px;
   }
+
+  .portfolio h1 {
+    padding-top: 4%;
+  }
+
 }
 
 @media (max-width: 946px) {
