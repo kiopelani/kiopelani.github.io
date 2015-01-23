@@ -173,7 +173,7 @@ section:after {
   font-size: 2em;
   color: red;
   margin-top: 25%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 
 #title-name {
@@ -225,7 +225,7 @@ section:after {
   margin: 0;
   overflow: hidden;
   background-color: black;
-  opacity: .7;
+  opacity: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
 }

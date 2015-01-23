@@ -37,9 +37,9 @@ $(document).ready(function(){
     })
   });
 $('.skills-container').hover(function(){
-  $('.skills-container').fadeTo(500, 1);},
+  $('.skills-container').fadeTo(500, .7);},
   function(){
-    $('.skills-container').fadeTo(500, .7);
+    $('.skills-container').fadeTo(500, 1);
   }
   )
 
