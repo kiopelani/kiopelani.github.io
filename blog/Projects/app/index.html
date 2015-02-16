@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="musicMap" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Music Map</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- icon -->
+  <link rel="icon" type="image/png" href="http://www.veryicon.com/icon/png/System/Agua/Music.png">
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- google maps -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZuqvikstSD-2NzxDLEIs39bPWji0bBx4"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+  <div ng-controller="ConcertsCtrl">
+
+    <div id="nav">
+      <span id="brand" ng-click="reload()"><span class="green">music</span>map</span>
+      <form id="search" ng-submit="findConcerts()">
+        <input type="text" placeholder="artist" ng-model="artist" placeholder="artist">
+        <input id="map-it" type="submit" value="Map It">
+      </form>
+    </div>
+
+    <div class="content">
+      <div class="error" ng-show="error">
+        {{ error }}
+      </div>
+      <div ng-show="showMap" id="map-canvas"></div>
+      <div class="concert-view" ng-view></div>
+      <button id="view-button" ng-show="concertView" ng-click="toggleView()">
+        GET {{concertView === 'main'? "LIST" : "IMAGE"}} VIEW
+      </button>
+    </div>
+
+  </div>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+
+</body>
+</html>
